@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bourgeoisie — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+      border: 0;
+      padding: 0;
+      margin: -1px;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner" aria-label="Main">
+    <div class="navbar-left">
+      <a href="/Bourgeoisie_Site_Map/index.html" class="brand" aria-label="Bourgeoisie home">
+        <img src="gif.gif" alt="Bourgeoisie logo" class="navbar-logo" />
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="/Bourgeoisie_Site_Map/index.html" class="nav-link" role="menuitem">Home (Bourgeoisie)</a>
+        <a href="/Bourgeoisie_Site_Map/about.html" class="nav-link" role="menuitem">About</a>
+        <div class="dropdown" id="collectionDropdown">
+          <button id="collectionBtn" class="dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            Collection <span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="dropdown-panel" role="menu" aria-labelledby="collectionBtn">
+            <div class="dropdown-grid">
+              <div class="dropdown-column">
+                <div class="dropdown-section-title">Overview</div>
+                <a href="/collection" class="dropdown-item" role="menuitem">Collection Overview</a>
+                <div class="dropdown-section-title" style="margin-top:10px;">Pants</div>
+                <a href="Pants/index.html" class="dropdown-item" role="menuitem">Pants</a>
+                <a href="Pants/Joggers/index.html" class="dropdown-item sub" role="menuitem">Joggers</a>
+                <a href="Pants/Waterproof/index.html" class="dropdown-item sub" role="menuitem">Water Proof</a>
+              </div>
+              <div class="dropdown-column">
+                <div class="dropdown-section-title">Pull Overs</div>
+                <a href="Pull_Overs/index.html" class="dropdown-item" role="menuitem">Pull Overs</a>
+                <div class="dropdown-submenu">
+                  <a href="Hoodies/index.html" class="dropdown-item sub" role="menuitem">Hoodies</a>
+                  <a href="Pull_Overs/Crop_Hoodie/index.html" class="dropdown-item sub" role="menuitem">Crop Hoodie</a>
+                </div>
+                <div class="dropdown-section-title" style="margin-top:10px;">Other</div>
+                <a href="T_Shirts/index.html" class="dropdown-item" role="menuitem">T-Shirt</a>
+                <a href="Beanies /index.html" class="dropdown-item" role="menuitem">Beanies</a>
+                <a href="Jackets/index.html" class="dropdown-item" role="menuitem">Jackets</a>
+                <a href="Socks/index.html" class="dropdown-item" role="menuitem">Socks</a>
+                <a href="Jerserys/index.html" class="dropdown-item" role="menuitem">Jersey</a>
+                <a href="Hats/index.html" class="dropdown-item" role="menuitem">Hats</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="dropdown" id="cartDropdown">
+          <button id="cartBtn" class="dropdown-btn" aria-haspopup="true" aria-expanded="false" type="button">
+            Cart <span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <div class="dropdown-panel cart-panel" role="menu" aria-labelledby="cartBtn">
+            <a href="/cart" class="dropdown-item" role="menuitem">Cart</a>
+            <a href="/cart/product-request" class="dropdown-item" role="menuitem">Product Request</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="nav-aux" aria-hidden="false">
+      <video src="fallingcontainer.mp4" class="featured-img" aria-label="Featured drop"></video>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <!-- Mobile menu (hidden on desktop) -->
+  <div id="mobileMenu" class="mobile-menu" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="close" id="mobileClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav" aria-label="Mobile Primary">
+      <a href="/">Home (Bourgeoisie)</a>
+      <a href="/about">About</a>
+      <button class="mobile-toggle" data-target="m-collection" aria-expanded="false" type="button">Collection ▸</button>
+      <div id="m-collection" class="mobile-sub" hidden>
+        <a href="/collection">Collection Overview</a>
+        <a href="Pants/index.html">Pants</a>
+        <a href="Pants/Joggers/index.html">Joggers</a>
+        <a href="Pants/Waterproof/index.html">Water Proof</a>
+        <a href="Pull_Overs/index.html">Pull Overs</a>
+        <a href="Hoodies/index.html">Hoodies</a>
+        <a href="Pull_Overs/Crop_Hoodie/index.html">Crop Hoodie</a>
+        <a href="T_Shirts/index.html">T-Shirt</a>
+        <a href="Beanies /index.html">Beanies</a>
+        <a href="Jackets/index.html">Jackets</a>
+        <a href="Socks/index.html">Socks</a>
+        <a href="Jerserys/index.html">Jersey</a>
+        <a href="Hats/index.html">Hats</a>
+      </div>
+      <button class="mobile-toggle" data-target="m-cart" aria-expanded="false" type="button">Cart ▸</button>
+      <div id="m-cart" class="mobile-sub" hidden>
+        <a href="/cart">Cart</a>
+        <a href="/cart/product-request">Product Request</a>
+      </div>
+    </nav>
+  </div>
+  <main id="main-content" tabindex="-1">
+
+    <!-- HERO -->
+
+    <section class="hero-mask">
+  <svg style="display:none;">
+    <defs>
+      <mask id="heroMask" maskUnits="objectBoundingBox" x="0" y="0" width="1" height="1">
+        <!-- Example: a soft ellipse, but put your custom SVG path here -->
+        <ellipse cx="0.5" cy="0.5" rx="0.48" ry="0.47" fill="white"/>
+      </mask>
+    </defs>
+  </svg>
+  <video class="hero-video" autoplay loop muted playsinline>
+    <source src="https://res.cloudinary.com/dzs3y7aj6/video/upload/v1761701074/Video_Generation_The_Abyss_Transition_zb4j7h.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    </section>
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>The Bourgeoisie: A Cut Above the Rest. Your Next Flex.</h1>
+          <p>
+            <strong>Elevate Your Aesthetic.</strong> This is more than a title—it's the definitive benchmark for the discerning few.
+            Step into a realm of <strong>certified vibes</strong> and experience the difference that is unmistakably clear.
+            We don't follow trends; <strong>We started the fire!</strong>
+            <span class="highlight">The choice is simple: become an inductee.</span>
+          </p>
+        </div>
+        <div class="hero-image-container">
+          <img src="BlkJacket.png" alt="Bourgeoisie Model" class="hero-img" />
+        </div>
+      </div>
+      <div class="hero-secondary">
+        <div class="hero-secondary-img-container">
+          <video src="https://res.cloudinary.com/dzs3y7aj6/video/upload/v1761701073/Final_Walk_and_Procession_Scene_copy_j0lmab.mp4" class="hero-img-2" autoplay loop muted playsinline aria-label="Flex Look">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>
+          <strong>The Difference is Clear</strong><br>
+          In a landscape crowded with fleeting fads and temporary trends, the Bourgeoisie stands as an unshakeable monument to enduring excellence.
+          <strong>The difference is clear.</strong> This is a legacy of taste and influence, built by those who are not afraid to lead. When you join, you are investing in an identity that transcends the moment, making every decision, every acquisition, and every appearance <strong>Your Next Flex</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+      <h2>Aesthetic Elevation and Dankest Drops</h2>
+      <div class="about-content">
+        <p>
+          True status is expressed not just in wealth, but in a flawlessly curated life.
+          <strong>Elevate your aesthetic</strong> beyond mere consumption into a form of art.
+          We offer access to <strong>The Dankest Drops This Fall</strong>—the most coveted, exclusive, and cutting-edge experiences and possessions that define the global standard of luxury.
+          Our style is the magnetic field that draws all eyes; become a <strong>glaze magnet</strong>, effortlessly attracting admiration and attention simply by being part of our world.
+        </p>
+        <video class="about-img" autoplay loop muted playsinline>
+          <source src="FeModelinBwHood.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- PRODUCT CARDS -->
+    <section id="product-cards-section" class="product-cards-section" aria-labelledby="product-cards-heading">
+      <h2 id="product-cards-heading">Flex Drops — Tap & Swipe</h2>
+      <div class="product-cards" role="list">
+        <!-- Example Card: jewelry -->
+        <article class="product-card" role="listitem" aria-label="Jewelry card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Jewelry images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723596/image_4_c0cwdi.png" alt="Jewelry look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723597/image_tt4tnu.png" alt="Jewelry look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761760651/mgqnxxou51mk9a_nfuxvk.jpg" alt="Jewelry look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Jewelry">&lt;</button>
+              <button class="card-next" aria-label="Next image for Jewelry">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Jewelry</div>
+            <button class="card-cta" aria-label="View Jewelry collection">View</button>
+          </div>
+        </article>
+        <!-- ... repeat for other cards ... -->
+        <!-- Shirts -->
+        <article class="product-card" role="listitem" aria-label="Shirts card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Shirts images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524279/image_24_dbq0u8.png" alt="Shirt look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524277/image_18_qtev7s.png" alt="Shirt look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524281/image_21_ydvmno.png" alt="Shirt look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Shirts">&lt;</button>
+              <button class="card-next" aria-label="Next image for Shirts">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Shirts</div>
+            <button class="card-cta" aria-label="View Shirts collection">View</button>
+          </div>
+        </article>
+        <!-- Jackets -->
+        <article class="product-card" role="listitem" aria-label="Jackets card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Jackets images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761598075/Gemini_Generated_Image_u0kbsdu0kbsdu0kb_lhznnz.png" alt="Jacket look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761598073/Gemini_Generated_Image_mibm7mibm7mibm7m_czickr.png" alt="Jacket look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761598073/Gemini_Generated_Image_y01eeuy01eeuy01e_kpsfp6.png" alt="Jacket look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Jackets">&lt;</button>
+              <button class="card-next" aria-label="Next image for Jackets">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Jackets</div>
+            <button class="card-cta" aria-label="View Jackets collection">View</button>
+          </div>
+        </article>
+        <!-- Water Proof Pants -->
+        <article class="product-card" role="listitem" aria-label="Water Proof Pants card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Water Proof Pants images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723614/Moss_front_ypyc8j.png" alt="Water proof pants look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723610/Pink_front_jnshio.png" alt="Water proof pants look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723612/terra_cotta_front_sjvo3d.png" alt="Water proof pants look 3" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1760723614/Moss_front_ypyc8j.png" alt="Water proof pants look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Water Proof Pants">&lt;</button>
+              <button class="card-next" aria-label="Next image for Water Proof Pants">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Water Proof Pants</div>
+            <button class="card-cta" aria-label="View Water Proof Pants collection">View</button>
+          </div>
+        </article>
+        <!-- Hoodies -->
+        <article class="product-card" role="listitem" aria-label="Hoodies card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Hoodies images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524304/Gemini_Generated_Image_v6g1u3v6g1u3v6g1_v4uf1o.png" alt="Hoodie look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524304/Gemini_Generated_Image_saxyoxsaxyoxsaxy_jo07jf.png" alt="Hoodie look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524294/Gemini_Generated_Image_5qqzm35qqzm35qqz_rygabr.png" alt="Hoodie look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Hoodies">&lt;</button>
+              <button class="card-next" aria-label="Next image for Hoodies">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Hoodies</div>
+            <button class="card-cta" aria-label="View Hoodies collection">View</button>
+          </div>
+        </article>
+        <!-- Hats -->
+        <article class="product-card" role="listitem" aria-label="Hats card">
+          <div class="card-media">
+            <div class="card-track" tabindex="0" aria-label="Hat images">
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524258/blackHat2_udz7ba.png" alt="Hat look 1" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524252/greenHat_guqbdy.png" alt="Hat look 2" class="card-slide" />
+              <img src="https://res.cloudinary.com/dzs3y7aj6/image/upload/v1761524253/blackHat_n3nkk6.png" alt="Hat look 3" class="card-slide" />
+            </div>
+            <div class="card-nav">
+              <button class="card-prev" aria-label="Previous image for Hats">&lt;</button>
+              <button class="card-next" aria-label="Next image for Hats">&gt;</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-title">Hats</div>
+            <button class="card-cta" aria-label="View Hats collection">View</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOUNDERS -->
+    <section class="founders-section" aria-labelledby="founders-heading">
+      <h2 id="founders-heading" class="founders-title">The Founders</h2>
+      <div class="founders-top-images">
+        <img src="Pat6.jpg" alt="Patbillious" class="founder-large-img" />
+        <img src="JJ3.png" alt="Jose Jodye" class="founder-large-img" />
+      </div>
+      <div class="founders-content">
+        <div class="founders-block">
+          <h3>The Architects of Elegance</h3>
+          <p>
+            Meet the dynamic duo driving this movement: <strong>Patbillious</strong>, the visionary CEO, Lead Designer, and Entrepreneur, alongside <strong>Jose Jodye</strong>, the sharp CFO and Director. Their synergy has been the catalyst for this enterprise, built on a foundation of unceasing <strong>passion and diligence</strong> that shapes every stitch and strategy.
+          </p>
+        </div>
+        <div class="founders-block founder-profile-block">
+          <img src="Pat3.jpg" alt="Patbillious portrait" class="founder-profile-img" />
+          <h3>Design and Drive: Patbillious</h3>
+          <p>
+            As the creative force, <strong>Patbillious</strong> infuses every collection with his signature aesthetic. His mind is the engine behind the brand, seamlessly blending the worlds of high design and street-smart entrepreneurship. He doesn't wait for inspiration; he seeks it, ensuring every garment from our luxurious <strong>high-quality hoodies</strong> to our <strong>waterproof engineered pants and jackets</strong> is a statement piece.
+          </p>
+        </div>
+        <div class="founders-block founder-profile-block">
+          <img src="JJ.jpg" alt="Jose Jodye portrait" class="founder-profile-img" />
+          <h3>Strategy and Sophistication: Jose Jodye</h3>
+          <p>
+            The financial and operational backbone of the company is <strong>Jose Jodye</strong>. As CFO and Director, he is the strategic mind that transforms creative vision into a tangible, profitable reality. Jose ensures that the brand's commitment to <strong>exotically sourced materials</strong> and premium engineering is financially sustainable, fueling a new era of rugged elegance.
+          </p>
+        </div>
+        <div class="founders-block ethos">
+          <h3>Rooted in Hustle: The Founders' Ethos</h3>
+          <p>
+            What truly sets Patbillious and Jose Jodye apart is their unrelenting work ethic and grounding in reality. They understand that success is earned in the trenches, not just theorized in meetings. Their commitment is tangible, reflected in the energy they bring to every level of the business.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading-home">
+      <h2 id="newsletter-heading-home">Stay in the Loop</h2>
+      <form class="newsletter-form" action="#" method="post" novalidate>
+        <label for="newsletter-email" class="visually-hidden">Email address</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com/" target="_blank" aria-label="Instagram" rel="noopener noreferrer"><img src="instagram.svg" alt="Instagram"></a>
+      <a href="https://tiktok.com/" target="_blank" aria-label="TikTok" rel="noopener noreferrer"><img src="tiktok.svg" alt="TikTok"></a>
+    </div>
+    <p>&copy; 2025 Bourgeoisie. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Product card carousel functionality
+    document.querySelectorAll('.product-card').forEach(function(card) {
+      const track = card.querySelector('.card-track');
+      const slides = track.querySelectorAll('.card-slide');
+      const prevBtn = card.querySelector('.card-prev');
+      const nextBtn = card.querySelector('.card-next');
+      let current = 0;
+
+      function updateSlides() {
+        slides.forEach((img, idx) => {
+          img.style.display = idx === current ? 'block' : 'none';
+        });
+      }
+      if (slides.length > 0) {
+        updateSlides();
+        prevBtn.addEventListener('click', function() {
+          current = (current - 1 + slides.length) % slides.length;
+          updateSlides();
+        });
+        nextBtn.addEventListener('click', function() {
+          current = (current + 1) % slides.length;
+          updateSlides();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

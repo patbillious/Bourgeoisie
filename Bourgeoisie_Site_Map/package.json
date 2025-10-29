@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@paper-design/shaders-react": "^0.0.60",
+    "express": "^5.1.0"
+  }
+}

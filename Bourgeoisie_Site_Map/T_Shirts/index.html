@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bourgeoisie — Home</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">T_Shirts_Page</a>
+
+  <header class="navbar" role="banner">
+    <div class="navbar-left">
+      <a href="/Bourgeoisie_Site_Map/index.html" class="brand" aria-label="Bourgeoisie home">
+        <img src="gif.gif" alt="Bourgeoisie logo" class="navbar-logo"/>
+      </a>
+
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="/Bourgeoisie_Site_Map/index.html" role="menuitem">BOURGEOISIE</a>
+        <a href="/Bourgeoisie_Site_Map/about.html" role="menuitem">About</a>
+
+        <!-- Collection Dropdown (primary navigation) -->
+    <div class="dropdown" id="collectionDropdown">
+          <button aria-haspopup="true" aria-expanded="false" id="collectionBtn" type="button">Collection</button>
+          <div class="dropdown-panel" role="menu" aria-labelledby="collectionBtn">
+            <div class="dropdown-grid">
+              <div>
+                <div class="dropdown-section-title">Fall Collection</div>
+                <a href="/FallCollection_Home/index.html" role="menuitem">Collection Overview</a>
+
+                <div class="dropdown-section-title" style="margin-top:10px;"></div>
+                <a href="/Bourgeoisie_Site_Map/Pants/index.html" role="menuitem" class="has-nested" id="pantsMenuBtn" aria-haspopup="true" aria-expanded="false">
+                  Pants <span id="pantsArrow">▸</span>
+                </a>
+                <div class="dropdown-nested" id="pantsMenuNested" style="display: none;">
+                  <a href="/Bourgeoisie_Site_Map/Pants/Waterproof/index.html" role="menuitem">Waterproof</a>
+                  <a href="/Bourgeoisie_Site_Map/Pants/Joggers/index.html" role="menuitem">Joggers</a>
+                </div>
+
+
+                <div class="dropdown-section-title" style="margin-top:10px;"></div>
+              </div>
+
+              <div>
+                <div class="dropdown-section-title"> New Drops!</div>
+                <a href="/collection/pull-overs" role="menuitem">Pull Overs</a>
+                
+                <div class="dropdown-section-title" style="margin-top:10px;"></div>
+                <a href="/Bourgeoisie_Site_Map/T_Shirts/index.html" role="menuitem">T-Shirt</a>
+                <a href="/Bourgeoisie_Site_Map/Beanies/index.html" role="menuitem">Beanies</a>
+                <a href="/Bourgeoisie_Site_Map/Jackets/index.html" role="menuitem">Jackets</a>
+                <a href="/Bourgeoisie_Site_Map/Socks/index.html" role="menuitem">Socks</a>
+                <a href="/Bourgeoisie_Site_Map/Jerseys/index.html" role="menuitem">Jersey</a>
+                <a href="/Bourgeoisie_Site_Map/Jewelry/index.html" role="menuitem">Jewelry</a>
+                <a href="/Bourgeoisie_Site_Map/Hats/index.html" role="menuitem">Hats</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Dropdown -->
+        <div class="dropdown" id="cartDropdown">
+          <button aria-haspopup="true" aria-expanded="false" id="cartBtn" type="button">Cart ▾</button>
+          <div class="dropdown-panel cart-panel" role="menu" aria-labelledby="cartBtn">
+            <a href="/cart" role="menuitem">Cart</a>
+            <a href="/cart/product-request" role="menuitem">Product Request</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="nav-aux" aria-hidden="false">
+      <video class="featured-img" autoplay loop muted playsinline>
+        <source src="fallingcontainer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- Mobile menu (dialog) -->
+    <div id="mobileMenu" class="mobile-menu" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <button class="close" id="mobileClose" aria-label="Close menu">✕</button>
+      <nav class="mobile-nav" role="navigation" aria-label="Mobile Primary">
+        <a href="/">Home (Bourgeoisie)</a>
+        <a href="/about">About</a>
+
+        
+        <div>
+          <button class="mobile-toggle" data-target="m-cart" aria-expanded="false" type="button">Cart ▸</button>
+          <div id="m-cart" class="mobile-sub" hidden>
+            <a href="/cart">Cart</a>
+            <a href="/cart/product-request">Product Request</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+     
+
+  <!-- Hero SVG Mask and Video/Image -->
+  <section class="hero-mask">
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="https://res.cloudinary.com/dzs3y7aj6/video/upload/v1761600541/ltx-video__47_copy_onchoh.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Fallback text for unsupported browsers -->
+    <!-- <div class="fallback-text">Bourgeoisie</div> -->
+  </section>
+  <canvas id="lava-canvas"></canvas>
+
+  <canvas id="lava-bg"></canvas>
+  <div class="main-container">
+    <div class="item-image-container">
+      <button class="swipe-btn left" id="prevBtn">&#8592;</button>
+      <img id="itemImage" src="" alt="Streetwear Item">
+      <button class="swipe-btn right" id="nextBtn">&#8594;</button>
+    </div>
+    <div class="divider"></div>
+    <div class="item-detail-container">
+      <h2 id="itemName">Item Name</h2>
+      <div class="sizes">
+        <span>Select Size:</span>
+        <button class="size-btn" data-size="S">S</button>
+        <button class="size-btn" data-size="M">M</button>
+        <button class="size-btn" data-size="L">L</button>
+        <button class="size-btn" data-size="XL">XL</button>
+      </div>
+
+
+    <div class="color-selector">
+   
+          <span>Select Color:</span>
+          <button class="color-btn" style="background:rgb(87, 104, 41)" data-color="moss" aria-label="moss"></button>
+          <button class="color-btn" style="background:rgb(230, 228, 119)" data-color="sand" aria-label="sand"></button>
+          <button class="color-btn" style="background:rgb(125, 140, 209); border:1px solid #e9dede" data-color="blue" aria-label="blue"></button>
+          <button class="color-btn" style="background:rgb(208, 134, 216); border:1px solid #e9dede" data-color="pink" aria-label="pink"></button>
+          <button class="color-btn" style="background:rgb(0, 0, 0); border:1px solid #e9dede" data-color="black" aria-label="black"></button>
+          <button class="color-btn" style="background:rgb(130, 79, 162); border:1px solid #e9dede" data-color="purple" aria-label="purple"></button>
+          <button class="color-btn" style="background:rgb(255, 255, 255); border:1px solid #e9dede" data-color="white" aria-label="white"></button>
+        </div>
+
+      <div class="materials">
+        <strong>Materials:</strong>
+        <span id="itemMaterials"></span>
+      </div>
+<div class="color">
+  <strong>Color:</strong>
+  <span id="itemColor"></span>  
+</div>
+
+      <div class="info">
+        <strong>Info:</strong>
+        <span id="itemInfo"></span>
+      </div>
+
+      <div class="price">
+        <strong>Price:</strong>
+        <span id="itemPrice"></span>
+      </div>
+
+      <button id="addToCartBtn" class="cart-btn">Add to Cart</button>
+      <div id="cartStatus"></div>
+      <button id="toggleCartBtn" class="cart-toggle-btn">See Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </div>
+  <div class="cart-summary" id="cartSummary" style="display:none;">
+    <h3>🛒 Cart (<span id="cartCountSummary">0</span>)</h3>
+    <ul id="cartList"></ul>
+    <button id="clearCartBtn" class="cart-btn">Clear Cart</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+  <script src="lava.js"></script>
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+    <section class="more-drip-section">
+      <h2>More Drip!</h2>
+      <div class="more-drip-gallery">
+        <div class="drip-image-space"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExazNpYWV0MzVtcmF1eG44OWdheGY2d3E0azUwa3hmcGdjZ2huN2c3ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/59W78YfWSgBOvjpcd5/giphy.gif" alt="Drip 1"></div>
+        <div class="drip-image-space"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3R1bm1tenA4YWZsYWUyNTlkdTMyZWF5amY5ZTRsaHYzenB1dWxiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YD82PCexmXw6HMsHNL/giphy.gif" alt="Drip 2"></div>
+        <div class="drip-image-space"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGR3OWprZDgzd2RsNDl2MHRoeWpucHhiMm93eGlkajg3c3U5dGRzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/16jfezVyi08JHpybYE/giphy.gif" alt="Drip 3"></div>
+        <div class="drip-image-space"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHF0ajl6amt2NDVsbG40dHIxdmxmbzdqZnZwNmVsdm9zdGdhYzQwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AcnxDdVoCDYcVqUZYE/giphy.gif" alt="Drip 4"></div>
+      </div>
+    </section>
+   <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Bourgeoisie. All rights reserved.</p>
+      <nav class="footer-nav" role="navigation" aria-label="Footer">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/contact">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
